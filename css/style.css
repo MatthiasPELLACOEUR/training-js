@@ -36,14 +36,6 @@ html, body {
     padding: 0px!important;
 }
 
-a.button {
-    margin: auto 5px!important;
-    width: 76px!important;
-    height: 76px!important;
-    background-color: #a5a5a5;
-    color: #000000;
-}
-
 button.button {
     margin: auto 5px!important;
     width: 76px!important;
@@ -52,77 +44,81 @@ button.button {
     color: #000000;
 }
 
-button.button-operations {
-    margin: auto 5px!important;
-    width: 76px!important;
-    height: 76px!important;
-    background-color: #a5a5a5;
-    color: #000000;
-}
-
-a.button:hover {
-    background-color: #bebebe;
-}
-
 button.button:hover {
     background-color: #bebebe;
 }
 
-a.button-operations {
+button.button-ops {
+    margin: auto 5px!important;
+    width: 76px!important;
+    height: 76px!important;
     background-color: #ff9e0a;
-}
-
-a.button-operations:hover {
-    background-color: #ffd18c;
-}
-
-
-
-a p {
-    line-height: 17px!important;
-    font-size: 2em;
-    font-weight: bold;
     color: #ffffff;
 }
 
-button p {
+button.button-ops:hover {
+    background-color: #ffd18c;
+}
+
+button.button-ops:focus {
+    background-color: #ffffff;
+    color: #ff9e0a;
+}
+
+
+button.useful-button, button.useful-button:focus {
+    background-color: #a5a5a5!important;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 17px!important;
+
+}
+
+
+button.button-times, button.button-divide {
     line-height: 17px!important;
     font-size: 2em;
     font-weight: bold;
+}
+
+button.button-plus, button.button-minus, button.button-equal{
+    line-height: 5px!important;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+button p {
+    margin: 0px;
+    height: 100%;
+    line-height: 76px;
+    /* font-size: 2em;
+    font-weight: bold; */
 }
 
 .zero {
     width: 50%!important;
 }
 
-a.button-zero {
+button.button-zero {
     width: 92%!important;
     border-radius: 40px!important;
     margin: 0px 5px 0px 5px!important;
 }
 
-a.numbers {
+button.numbers, button.numbers:focus {
     background-color: #333333;
     color: #ffffff;
-
+    font-size: 2em;
+    line-height: 17px!important;
 }
 
-button.numbers {
-    background-color: #333333;
-    color: #ffffff;
-
-}
-
-a.numbers:hover {
-    background-color: #535353;
-    
-}
 button.numbers:hover {
     background-color: #535353;
     
 }
 
-button:focus {
+button.numbers:focus {
     background-color: #333333!important;
     color: none;
 }
+
