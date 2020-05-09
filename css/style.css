@@ -44,7 +44,27 @@ a.button {
     color: #000000;
 }
 
+button.button {
+    margin: auto 5px!important;
+    width: 76px!important;
+    height: 76px!important;
+    background-color: #a5a5a5;
+    color: #000000;
+}
+
+button.button-operations {
+    margin: auto 5px!important;
+    width: 76px!important;
+    height: 76px!important;
+    background-color: #a5a5a5;
+    color: #000000;
+}
+
 a.button:hover {
+    background-color: #bebebe;
+}
+
+button.button:hover {
     background-color: #bebebe;
 }
 
@@ -56,11 +76,16 @@ a.button-operations:hover {
     background-color: #ffd18c;
 }
 
-i {
-    line-height: 76px!important;
-}
+
 
 a p {
+    line-height: 17px!important;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+button p {
     line-height: 17px!important;
     font-size: 2em;
     font-weight: bold;
@@ -82,7 +107,22 @@ a.numbers {
 
 }
 
+button.numbers {
+    background-color: #333333;
+    color: #ffffff;
+
+}
+
 a.numbers:hover {
     background-color: #535353;
     
+}
+button.numbers:hover {
+    background-color: #535353;
+    
+}
+
+button:focus {
+    background-color: #333333!important;
+    color: none;
 }
