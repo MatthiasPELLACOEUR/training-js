@@ -11,10 +11,24 @@ function getSum(x, y) {
     console.log(r);
     
 }
-
+function getDifference(x, y) {
+    var r = x - y
+    console.log(r);
+    
+}
+function getProduct(x, y) {
+    var r = x * y
+    console.log(r);
+    
+}
+function getQuotient(x, y) {
+    var r = x / y
+    console.log(r);
+    
+}
 
 for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function(e){
+    buttons[i].addEventListener('click', (e) =>{
         // console.log(e.target.textContent);
         let nbTwo = document.createTextNode(e.target.textContent)
         
@@ -29,7 +43,7 @@ for (var i = 0; i < buttons.length; i++) {
     })
 }
 for (var i = 0; i < inputButton.length; i++) {
-    inputButton[i].addEventListener('click',function(e){
+    inputButton[i].addEventListener('click', (e) =>{
         // console.log(e.target.classList[0]);
 
         
@@ -43,7 +57,7 @@ for (var i = 0; i < inputButton.length; i++) {
                     case '/':
                         var x = parseInt(result.textContent, 10)
                         operation = '/'
-                        
+                        getQuotient(x, y)
                     break
 
                     case '*':
